@@ -228,3 +228,196 @@ footer {
     transform: translateX(5px);
 }
 
+.photos {
+    margin: 30px 0;
+}
+
+.photos h3 {
+    text-align: center;
+    color: #35424a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.photo-container img:hover {
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ol {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+ol h3 {
+    color: #35424a;
+    margin-bottom: 15px;
+}
+
+ol p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 768px) {
+    .left-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: none;
+        border-bottom: 2px solid #e67e22;
+    }
+    
+    .left-sidebar h3 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .left-sidebar p {
+        font-size: 0.85rem;
+        margin-bottom: 8px;
+        text-align: center;
+        font-style: normal;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    header h2 {
+        font-size: 1.4rem;
+    }
+    
+    header h3 {
+        font-size: 1.2rem;
+    }
+    
+    header p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    .photo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .photo-container img {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .software-skills {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .left-skills, .right-skills {
+        min-width: 100%;
+    }
+    
+    .left-skills p, .right-skills p {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    
+    ul, ol {
+        margin-left: 20px;
+    }
+    
+    li {
+        font-size: 0.95rem;
+    }
+    
+    button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .left-sidebar {
+        padding: 10px;
+    }
+    
+    .left-sidebar h3 {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .left-sidebar p {
+        font-size: 0.8rem;
+        margin-bottom: 6px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    header h2 {
+        font-size: 1.2rem;
+    }
+    
+    header h3 {
+        font-size: 1rem;
+    }
+    
+    header p {
+        font-size: 0.9rem;
+    }
+    
+    .photo-container img {
+        width: 95%;
+        max-width: 280px;
+    }
+    
+    .photos h3 {
+        font-size: 1.2rem;
+    }
+    
+    a {
+        font-size: 0.9rem;
+    }
+}
+
