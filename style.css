@@ -168,18 +168,49 @@ cursor: pointer;
 }
 
 .skill-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 gap:20px;
 }
 
 .skill-grid div{
 background:white;
-padding:25px;
+padding:20px;
 text-align:center;
 border-radius:10px;
 box-shadow:0 3px 10px rgba(0,0,0,.1);
 font-weight:bold;
+display:flex;
+align-items:center;
+gap:15px;
+width:200px;
+height:60px;
+box-sizing:border-box;
+}
+
+.skill-icon-img{
+width:40px;
+height:40px;
+object-fit:contain;
+flex-shrink:0;
+}
+
+.skill-grid div span{
+font-size:16px;
+}
+
+.skill-icon{
+width:40px;
+height:40px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+border-radius:8px;
+color:white;
+font-weight:bold;
+font-size:14px;
+flex-shrink:0;
 }
 
 .character-models{
